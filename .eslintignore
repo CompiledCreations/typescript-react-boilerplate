@@ -1,0 +1,11 @@
+# ESLint files
+.eslintrc.js
+
+# Don't lint typings as they are always a bit weird
+*.d.ts
+
+# Stuff in src we always ignore
+*.html
+*.scss
+*.css
+*.png
