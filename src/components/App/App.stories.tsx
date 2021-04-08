@@ -1,7 +1,7 @@
+import { Meta, Story } from "@storybook/react";
 import React from "react";
-import { Story, Meta } from "@storybook/react";
 
-import { App } from "./App";
+import { App, AppProps } from "./App";
 
 export default {
   title: "Pages/App",
@@ -9,10 +9,9 @@ export default {
   argTypes: {}
 } as Meta;
 
-const Template: Story = () => <App />;
+const Template: Story<AppProps> = (props) => <App {...props} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  primary: true,
-  label: "App"
+  title: "Boilerplate"
 };

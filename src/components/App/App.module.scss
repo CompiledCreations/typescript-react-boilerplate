@@ -1,4 +1,7 @@
+@use "../../styles/colors" as colors;
+
 .container {
+  color: colors.$primary-color;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -1,9 +1,8 @@
+import ESLintPlugin from "eslint-webpack-plugin";
+import HtmlWebpackPlugin from "html-webpack-plugin";
 import * as path from "path";
 import * as webpack from "webpack";
 import * as webpackDevServer from "webpack-dev-server";
-
-import ESLintPlugin from "eslint-webpack-plugin";
-import HtmlWebpackPlugin from "html-webpack-plugin";
 
 import { customWebpackData } from "./package.json";
 
