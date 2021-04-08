@@ -23,6 +23,7 @@ module.exports = {
     "plugin:import/warnings",
     "plugin:import/typescript",
     "plugin:jest/recommended",
+    "plugin:unicorn/recommended",
     "prettier"
   ],
   rules: {
@@ -77,6 +78,24 @@ module.exports = {
         ]
       }
     ],
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "unicorn/filename-case": [
+      "error",
+      {
+        cases: {
+          camelCase: true,
+          pascalCase: true
+        }
+      }
+    ],
+    "unicorn/prevent-abbreviations": [
+      "error",
+      {
+        whitelist: {
+          Props: true,
+          props: true
+        }
+      }
+    ]
   }
 };

@@ -5,4 +5,4 @@ import { App } from "./components/App";
 
 import "./index.scss";
 
-ReactDOM.render(<App title="Boilerplate" />, document.getElementById("root"));
+ReactDOM.render(<App title="Boilerplate" />, document.querySelector("#root"));
